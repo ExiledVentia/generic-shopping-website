@@ -6,6 +6,6 @@
   <title>Watch my 3rd Eye</title>
 </head>
 <body>
-  The second coming soon midle blok6.
+  what the fuck
 </body>
 </html>
