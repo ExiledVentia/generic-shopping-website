@@ -1,0 +1,22 @@
+{
+  "name": "generic-shopping-website",
+  "version": "1.0.0",
+  "description": "Funny website project",
+  "main": "index.js",
+  "scripts": {
+    "tw-startup": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExiledVentia/generic-shopping-website.git"
+  },
+  "author": "ExiledVentia, ricin-u",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ExiledVentia/generic-shopping-website/issues"
+  },
+  "homepage": "https://github.com/ExiledVentia/generic-shopping-website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
