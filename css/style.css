@@ -1619,6 +1619,10 @@ input:checked + .toggle-bg {
   padding: 0px;
 }
 
+.p-\[\FFFD\] {
+  padding: �;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
