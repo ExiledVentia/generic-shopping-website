@@ -4,7 +4,7 @@
   "description": "Funny website project",
   "main": "index.js",
   "scripts": {
-    "tw-startup": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+    "tw-startup": "npx tailwindcss-cli -i ./src/input.css -o ./css/style.css --watch"
   },
   "repository": {
     "type": "git",
