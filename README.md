@@ -9,6 +9,7 @@
 
 You may change it in input.css and then running `npm run tw-startup` on the terminal
 
-## Misc
+## Important
 
 **DO NOT** change the folder configuration
+**ALWAYS** run `npm run tw-startup` when editing
