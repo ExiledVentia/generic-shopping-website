@@ -1,4 +1,4 @@
-<?php include 'session.php'; 
+<?php include '../session.php'; 
 if (!(trim($_SESSION['id_login']) == '1')) {
    ?>
    <script>

@@ -4,7 +4,8 @@
   "description": "Funny website project",
   "main": "index.js",
   "scripts": {
-    "tw-startup": "npx tailwindcss-cli -i ./src/input.css -o ./css/style.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "prod": "npx tailwindcss -i ./src/input.css -o ./css/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,6 @@
     "autoprefixer": "^10.4.19",
     "flowbite": "^2.3.0",
     "postcss": "^8.4.38"
-  }
+  },
+  "keywords": []
 }
