@@ -13,3 +13,4 @@ You may change it in input.css and then running `npm run dev` on the terminal
 
 **DO NOT** change the folder configuration
 **ALWAYS** run `npm run dev` when editing
+**ALWAYS** use `ctrl + shift + r` when refreshing a page
