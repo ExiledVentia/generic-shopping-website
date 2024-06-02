@@ -2,7 +2,7 @@
 if (!(trim($_SESSION['id_login']) == '1')) {
    ?>
    <script>
-      alert('Please Login Before You Continue')
+      alert('You are not authorized to access this page');
       window.location = "../public/login.php";
    </script>
    <?php
