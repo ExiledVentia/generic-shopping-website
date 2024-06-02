@@ -8,7 +8,7 @@
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 dark:bg-gray-800">
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -40,29 +40,29 @@
 </nav>
 <!-- Carousel -->
 
-
+<div class="p-12">
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-[800px]">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider indicators -->
@@ -88,9 +88,51 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <span class="sr-only">Next</span>
-        </span>
-    </button>
+          </span>
+        </button>
+      </div>
+    </div>
+      
+<div class="text-black dark:text-white">
+  <div class="px-64 pb-8 pt-8 grid grid-cols-2 rounded-lg">
+    <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-l-lg">
+      <img class="w-full h-full rounded-l-lg" src="https://placewaifu.com/image/400" alt="">
+    </div>
+    <div class="h-96 bg-gray-200 dark:bg-gray-900 p-10 pt-28 rounded-r-lg">
+      <h1 class="text-3xl font-bold">Fumos</h1><br>
+      <p>We have like, the coolest fumofumo plushies imaginable</p><br>
+      <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
+    </div>
+  </div>
+  <div class="px-64 pb-8 pt-0 grid grid-cols-2 rounded-lg">
+    <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-l-lg p-10 pt-28">
+      <h1 class="text-3xl font-bold">Item 2</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non.</p><br>
+      <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
+    </div>
+    <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg">
+      <img class="w-full h-full rounded-r-lg" src="https://placewaifu.com/image/400" alt="">
+    </div>
+  </div>
+  <div class="px-64 pb-8 pt-0 grid grid-cols-2 rounded-lg">
+    <div class="h-96 rounded-l-lg bg-gray-200 dark:bg-gray-900">
+      <img class="w-full h-full rounded-l-lg" src="https://placewaifu.com/image/400" alt="">
+    </div>
+    <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg p-10 pt-28">
+      <h1 class="text-3xl font-bold">Item 3</h1><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</p><br>
+      <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
+    </div>
+  </div>
 </div>
+<!-- foot 🤤🤤🤤 -->
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Fumo Hideout Doujin Circle</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
 <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
