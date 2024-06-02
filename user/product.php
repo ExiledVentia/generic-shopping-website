@@ -17,7 +17,7 @@ $a = mysqli_fetch_object($contact);
 <body class="bg-gray-100 dark:bg-gray-800">
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="product.php" class="flex items-center space-x-3 rtl:space-x-reverse">
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Fumo Hideout</span>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -88,7 +88,7 @@ $a = mysqli_fetch_object($contact);
         </div>
     </div>
 </form>
-<div class="px-80 pt-12 grid grid-cols-4">
+<div class="px-80 pt-12 grid grid-cols-4 gap-4">
 <?php
   if ($_GET['search'] != '' || $_GET['cat'] != '') {
   $where = "AND product_name LIKE '%" . $_GET['search'] . "%' AND category_id LIKE '%" . $_GET['cat'] . "%'";
@@ -99,14 +99,14 @@ $a = mysqli_fetch_object($contact);
 ?>
 <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img class="p-8 rounded-lg" src="../product_images/<?php echo $p['product_image'] ?>" alt="product image" />
+      <img class="h-[300px] w-auto object-stretch p-8 rounded-lg bg-cover" src="../image/product/<?php echo $p['product_image'] ?>" alt="product image" />
     </a>
     <div class="px-5 pb-5">
         <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo $p['product_name'] ?></h5>
+            <h5 class="text-l font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo $p['product_name'] ?></h5>
         </a>
         <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp. <?php echo $p['product_price'] ?></span>
+            <span class="text-xl font-bold text-gray-900 dark:text-white">Rp. <?php echo number_format($p['product_price']) ?></span>
             <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
         </div>
     </div>
