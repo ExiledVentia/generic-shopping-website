@@ -8,40 +8,40 @@ function dateEn($tgl){
 function getMonth($mth){
     switch ($mth){
         case 1;
-            return "January";
+            return " January ";
         break;
         case 2;
-            return "February";
+            return " February ";
         break;
         case 3;
-            return "March";
+            return " March ";
         break;
         case 4;
-            return "April";
+            return " April ";
         break;
         case 5;
-            return "May";
+            return " May ";
         break;
         case 6;
-            return "June";
+            return " June ";
         break;
         case 7;
-            return "July";
+            return " July ";
         break;
         case 8;
-            return "August";
+            return " August ";
         break;
         case 9;
-            return "September";
+            return " September ";
         break;
         case 10;
-            return "October";
+            return " October ";
         break;
         case 11;
-            return "November";
+            return " November ";
         break;
         case 12;
-            return "December";
+            return " December ";
         break;
 
     }
