@@ -98,11 +98,11 @@ $a = mysqli_fetch_object($contact);
   while ($p = mysqli_fetch_array($product)) {
 ?>
 <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
+    <a href="product_detail.php?id=<?php echo $p['product_id'] ?>">
       <img class="h-[300px] w-auto object-stretch p-8 rounded-lg bg-cover" src="../image/product/<?php echo $p['product_image'] ?>" alt="product image" />
     </a>
     <div class="px-5 pb-5">
-        <a href="#">
+        <a href="product_detail.php?id=<?php echo $p['product_id'] ?>">
             <h5 class="text-l font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo $p['product_name'] ?></h5>
         </a>
         <div class="flex items-center justify-between">
