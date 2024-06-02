@@ -1,0 +1,1 @@
+<?php include '../db.php'; if(isset($_GET['id'])){$delete = mysqli_query($conn, "UPDATE tb_checkout SET validation='Invalid', status='Cancelled' WHERE ck_id = '". $_GET['id'] ."'"); echo '<script>window.location="checkout.php"</script>';} ?>
