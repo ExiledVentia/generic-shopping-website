@@ -33,6 +33,99 @@ $a = mysqli_fetch_object($contact);
     </div>
   </div>
 </nav>
+<div class="p-8 bg-gray-400 dark:bg-gray-700">
+  <h1 class="text-3xl mb-4 text-black dark:text-white px-[300px]">All Products</h1>
+</div>
+<!-- search -->
+<form class="py-8 max-w-lg mx-auto">
+  <?php 
+  $category = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY category_id DESC");
+  $temp_cat = mysqli_query($conn, "SELECT * FROM tb_category WHERE category_id = '".$_GET['cat']."' ORDER BY category_id DESC");
+  $temper_cat = mysqli_fetch_array($temp_cat);
+  ?>
+    <div class="flex">
+        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Categories</label>
+        <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">
+        <?php 
+          if(!isset($_GET['cat'])){ 
+            echo "All Categories"; 
+          }else{ 
+            echo $temper_cat['category_name']; 
+          }
+          ?> 
+        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+            <li>
+              <a href="product.php">
+                <button  type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">All Categories</button>
+              </a>
+            </li>
+            <?php
+                if (mysqli_num_rows($category) > 0) {
+                while ($k = mysqli_fetch_array($category)) { ?>
+            <li>
+              <a href="product.php?cat=<?php echo $k['category_id'] ?>">
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><?php echo $k['category_name'] ?></button>
+              </a>
+            </li>
+            <?php }} else { ?>
+            <p>Category Not Found</p>
+            <?php } ?>
+            </ul>
+        </div>
+        <div class="relative w-full">
+            <input type="search" name="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search for Products..." required>
+            <input type="hidden" name="cat" value="<?php $_GET['cat'] ?>">
+            <button type="submit" name=submit class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+                <span class="sr-only">Search</span>
+            </button>
+        </div>
+    </div>
+</form>
+<div class="px-80 pt-12 grid grid-cols-4">
+<?php
+  if ($_GET['search'] != '' || $_GET['cat'] != '') {
+  $where = "AND product_name LIKE '%" . $_GET['search'] . "%' AND category_id LIKE '%" . $_GET['cat'] . "%'";
+  }
+  $product = mysqli_query($conn, "SELECT * FROM tb_product WHERE product_status = 1 $where ORDER BY product_id DESC");
+  if (mysqli_num_rows($product) > 0) {
+  while ($p = mysqli_fetch_array($product)) {
+?>
+<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="p-8 rounded-lg" src="../product_images/<?php echo $p['product_image'] ?>" alt="product image" />
+    </a>
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo $p['product_name'] ?></h5>
+        </a>
+        <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp. <?php echo $p['product_price'] ?></span>
+            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+        </div>
+    </div>
+</div>
+<?php }
+  } else {
+      ?>
+      <p>Product not Found</p>
+  <?php
+  }
+?>
+</div>
+<!-- foot 🤤🤤🤤 -->
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Fumo Hideout Doujin Circle</a>. All Rights Reserved.</span>
+    </div>
+</footer>
 <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
