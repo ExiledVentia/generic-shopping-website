@@ -1,4 +1,13 @@
-<?php //include 'session.php'; ?>
+<?php include 'session.php'; 
+if (!(trim($_SESSION['id_login']) == '1')) {
+   ?>
+   <script>
+      alert('Please Login Before You Continue')
+      window.location = "../public/login.php";
+   </script>
+   <?php
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +25,17 @@
 </button>
 <aside id="sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+      <a href="../public/index.php" class="flex items-center ps-2.5 mb-5">
+         <span class="pl-3 text-xl font-semibold whitespace-nowrap dark:text-white">Fumo</span>
+      </a>
       <ul class="space-y-2 font-medium">
          <?php include 'sidebar.php'; ?>
       </ul>
    </div>
 </aside>
+<div class="p-8 sm:ml-64">
+   <h1 class="text-3xl font-bold mb-4 text-black dark:text-white">Welcome to the Admin Dashboard, <?php echo $user_row['admin_name']; ?></h1>
+</div>
 <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
