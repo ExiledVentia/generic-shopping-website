@@ -31,8 +31,8 @@
     </div>
   </div>
 </nav>
-<div class="p-8 sm:ml-64">
-  <h1 class="text-3xl font-bold mb-4 text-black dark:text-white">Welcome to the Admin Dashboard, <?php echo $user_row['admin_name']; ?></h1>
+<div class="p-8 bg-gray-400 dark:bg-gray-700">
+  <h1 class="text-3xl mb-4 text-black dark:text-white px-[300px]">Welcome to the Dashboard, <?php echo $user_row['admin_name'] ?></h1>
 </div>
 <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
