@@ -95,14 +95,14 @@
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 p-10 pt-28 rounded-r-lg">
       <h1 class="text-3xl font-bold">Fumos</h1><br>
-      <p>We have like, the coolest fumofumo plushies imaginable</p><br>
+      <p>We have like, the coolest fumofumo plushies imaginable.</p><br>
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
   </div>
   <div class="px-64 pb-8 pt-0 grid grid-cols-2 rounded-lg">
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-l-lg p-10 pt-28">
-      <h1 class="text-3xl font-bold">Item 2</h1><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non.</p><br>
+      <h1 class="text-3xl font-bold">DEKA Fumo</h1><br>
+      <p>Same thing, still coolest plushies imaginable.</p><br>
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg">
@@ -114,8 +114,8 @@
       <img class="w-full h-full rounded-l-lg" src="../image/src/cards/Nesoberi.png" alt="">
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg p-10 pt-28">
-      <h1 class="text-3xl font-bold">Item 3</h1><br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</p><br>
+      <h1 class="text-3xl font-bold">Noseberi</h1><br>
+      <p>Heheh Beans.. Hahah..</p><br>
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
   </div>
