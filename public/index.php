@@ -23,17 +23,17 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="index.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
         </li>
         <li>
           <a href="login.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Register</a>
+          <a href="register.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Register</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -46,23 +46,18 @@
     <div class="relative h-56 overflow-hidden rounded-lg md:h-[500px]">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider indicators -->
@@ -96,7 +91,7 @@
 <div class="text-black dark:text-white">
   <div class="px-64 pb-8 pt-8 grid grid-cols-2 rounded-lg">
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-l-lg">
-      <img class="w-full h-full rounded-l-lg" src="https://placewaifu.com/image/400" alt="">
+      <img class="w-full h-full rounded-l-lg" src="../image/src/cards/fumofumo.png" alt="">
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 p-10 pt-28 rounded-r-lg">
       <h1 class="text-3xl font-bold">Fumos</h1><br>
@@ -111,12 +106,12 @@
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg">
-      <img class="w-full h-full rounded-r-lg" src="https://placewaifu.com/image/400" alt="">
+      <img class="w-full h-full rounded-r-lg" src="../image/src/cards/DekaFumo.png" alt="">
     </div>
   </div>
   <div class="px-64 pb-8 pt-0 grid grid-cols-2 rounded-lg">
     <div class="h-96 rounded-l-lg bg-gray-200 dark:bg-gray-900">
-      <img class="w-full h-full rounded-l-lg" src="https://placewaifu.com/image/400" alt="">
+      <img class="w-full h-full rounded-l-lg" src="../image/src/cards/Nesoberi.png" alt="">
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg p-10 pt-28">
       <h1 class="text-3xl font-bold">Item 3</h1><br>
