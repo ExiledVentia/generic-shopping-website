@@ -11,8 +11,8 @@ include '../datefunc.php';
     <title>Checkout</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bg-gray-100 dark:bg-gray-800">
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
+<body class="bg-gray-100 dark:bg-[#1A1F37]">
+<nav class="bg-white border-gray-200 dark:bg-[#111526]">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="product.php" class="flex items-center space-x-3 rtl:space-x-reverse">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Fumo Hideout</span>
@@ -24,13 +24,13 @@ include '../datefunc.php';
             </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-[#111526] dark:border-gray-700">
             <?php include 'navbar.php' ?>
             </ul>
         </div>
     </div>
 </nav>
-<div class="p-8 bg-gray-400 dark:bg-gray-700">
+<div class="p-8 bg-gray-400 dark:bg-[#2B3459]">
     <h1 class="text-3xl mb-4 text-black dark:text-white px-[300px]">Checkout</h1>
 </div>
 <div class="py-8">
