@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> -->
 </head>
-<body class="bg-gray-100 dark:bg-gray-800">
+<body class="bg-gray-100 dark:bg-[#1A1F37]">
 <div class="flex items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
-    <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-[#242C48] dark:border-gray-700">
         <form class="space-y-6" action="" method="post">
             <h5 class="text-xl font-medium text-gray-900 dark:text-white">Log In</h5>
             <div>
