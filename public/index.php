@@ -46,23 +46,18 @@
     <div class="relative h-56 overflow-hidden rounded-lg md:h-[800px]">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-        <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://placewaifu.com/image/600" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../image/src/carousel/ciruno.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider indicators -->
@@ -96,7 +91,7 @@
 <div class="text-black dark:text-white">
   <div class="px-64 pb-8 pt-8 grid grid-cols-2 rounded-lg">
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-l-lg">
-      <img class="w-full h-full rounded-l-lg" src="https://placewaifu.com/image/400" alt="">
+      <img class="w-full h-full rounded-l-lg" src="../image/src/cards/fumofumo.png" alt="">
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 p-10 pt-28 rounded-r-lg">
       <h1 class="text-3xl font-bold">Fumos</h1><br>
@@ -111,12 +106,12 @@
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg">
-      <img class="w-full h-full rounded-r-lg" src="https://placewaifu.com/image/400" alt="">
+      <img class="w-full h-full rounded-r-lg" src="../image/src/cards/DekaFumo.png" alt="">
     </div>
   </div>
   <div class="px-64 pb-8 pt-0 grid grid-cols-2 rounded-lg">
     <div class="h-96 rounded-l-lg bg-gray-200 dark:bg-gray-900">
-      <img class="w-full h-full rounded-l-lg" src="https://placewaifu.com/image/400" alt="">
+      <img class="w-full h-full rounded-l-lg" src="../image/src/cards/Nesoberi.png" alt="">
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg p-10 pt-28">
       <h1 class="text-3xl font-bold">Item 3</h1><br>
