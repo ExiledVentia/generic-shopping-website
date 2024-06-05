@@ -102,7 +102,7 @@
   <div class="px-64 pb-8 pt-0 grid grid-cols-2 rounded-lg">
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-l-lg p-10 pt-28">
       <h1 class="text-3xl font-bold">DEKA Fumo</h1><br>
-      <p>Same thing, still coolest plushies imaginable.</p><br>
+      <p>Same thing, just bigger and WAY more expensive. Deka comes from the word "Dekai" (でかい) which means huge in Japanese.</p><br>
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg">
@@ -115,7 +115,7 @@
     </div>
     <div class="h-96 bg-gray-200 dark:bg-gray-900 rounded-r-lg p-10 pt-28">
       <h1 class="text-3xl font-bold">Noseberi</h1><br>
-      <p>Heheh Beans.. Hahah..</p><br>
+      <p>No they aren't just heads the have bodies, just not as big as the head.</p><br>
       <span class="pt-12 text-blue-800 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-800 transition-transform"><a href="">Buy them here ></a></span>
     </div>
   </div>
