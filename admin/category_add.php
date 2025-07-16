@@ -47,7 +47,7 @@ if (!(trim($_SESSION['id_login']) == '1')) {
         <?php
         if (isset($_POST['submit'])) {
             $name = $_POST['name'];
-            $insert = mysqli_query($conn, "INSERT INTO tb_category VALUES('','$name')");
+            $insert = mysqli_query($conn, "INSERT INTO tb_category VALUES(null,'$name')");
 
             if ($insert) {
                 echo '<script>alert("Category successfully added")</script>';
